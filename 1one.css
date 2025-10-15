@@ -6,6 +6,10 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
 .nav {
   max-height: 80px;
   background-color: #234c6af2;
@@ -48,15 +52,12 @@ html {
 .navbar ul li:hover {
   transform: translateY(-5px);
   text-decoration: underline white;
-  padding: 10px;
 }
 .main {
-  background-image: url("hallstatt-3609863_1280.jpg");
+  background-image: url("images/hallstatt-3609863_1280.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-}
-.main {
   display: flex;
   align-items: end;
   justify-content: space-between;
