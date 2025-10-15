@@ -1,0 +1,251 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav {
+  max-height: 80px;
+  background-color: #234c6af2;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.nav-logo {
+  display: flex;
+  margin-top: 20px;
+}
+.nav-logo img {
+  border-radius: 50%;
+  max-width: 100px;
+}
+.nav-logo h3 {
+  font-size: 20px;
+  margin-top: 30px;
+  color: white;
+}
+.navbar ul {
+  margin-top: 30px;
+  display: flex;
+  gap: 25px;
+  font-size: 25px;
+  list-style-type: none;
+}
+.navbar ul li {
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  
+}
+.navbar ul li:hover {
+  transform: translateY(-5px);
+  text-decoration: underline white;
+  padding: 10px;
+}
+.main {
+  background-image: url("hallstatt-3609863_1280.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+.main {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  padding: 20px;
+}
+.main-logo {
+  max-width: 300px;
+}
+.main-logo h1 {
+  color: white;
+  font-size: 39px;
+}
+.main-logo p {
+  color: white;
+  line-height: 1.5rem;
+}
+.main-button button {
+  padding: 10px;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.565);
+}
+.main-button button:hover {
+  background-color: white;
+  color: black;
+}
+
+.tour-section {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.card {
+  width: 200px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.709);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+  color: #333;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  padding: 0 10px 10px;
+}
+
+.card button {
+  background-color: rgba(0, 0, 0, 0.757);
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #1b3c53;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.packages-section {
+  padding: 40px;
+  background-color: white;
+  text-align: center;
+}
+
+.packages-section h2 {
+  font-size: 28px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.package-table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.package-table th,
+.package-table td {
+  padding: 15px 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.package-table th {
+  background-color: #1b3c53;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.package-table tr:hover {
+  background-color: #f1f7ff;
+}
+
+.package-table td {
+  font-size: 15px;
+  color: #444;
+}
+
+@media (max-width: 768px) {
+  .package-table {
+    font-size: 14px;
+  }
+  .package-table th,
+  .package-table td {
+    padding: 10px 6px;
+  }
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.096);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px;
+}
+.contact-form {
+  padding: 20px;
+}
+.contact-input input {
+  padding: 5px;
+}
+.submit {
+  font-size: large;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.submit:hover {
+  background-color: rgba(0, 0, 0, 0.433);
+  color: white;
+}
+.contact-pic img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.709);
+}
+.btn {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  /* padding: 10px; */
+}
+.btn button {
+  padding: 10px;
+  border-radius: 0px;
+  border: none;
+  background-color: blue;
+}
+.btn button a {
+  font-size: x-large;
+  color: white;
+}
+.btn button:hover {
+  background-color: black;
+  color: white;
+}
+
